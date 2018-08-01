@@ -16,7 +16,7 @@ A matrix is *Toeplitz* if every diagonal from top-left to bottom-right has the s
 
 Now given an `M x N` matrix, return `True` if and only if the matrix is *Toeplitz*.
 
-![u=415293130,2419074865&fm=27&gp=0](C:\Users\tangxing\Desktop\u=415293130,2419074865&fm=27&gp=0.jpg)
+![图片车市](http://img.zcool.cn/community/0117e2571b8b246ac72538120dd8a4.jpg@1280w_1l_2o_100sh.jpg)
 
 
 
