@@ -20,7 +20,7 @@
 
     一个In [] : 叫做cell , 主要的操作在红框的区域， 代码块内的操作跟正常的IDE一样，以下操作都在红框内
 
-    * 按 'C'  复制 ，按'V' 黏贴 ，按 'M' 将cell改为markdown模式，'Ctrl + A' 全选所有代码
+    * 按 'C'  复制 ，按'V' 黏贴 ，按 'M' 将cell改为markdown模式，'Ctrl + A' 全选所有代码 , 双击 'd' 删除cell
     * ‘ Shift +Enter ' 执行代码块内的语句
 
   * 在jupyter中可以直接调用相对路径的.py文件 ，例如：
