@@ -23,6 +23,7 @@
  * [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
  
 # numpy
+## 矩阵索引，切片
 ## random模块
  * permutation
 # pandas
