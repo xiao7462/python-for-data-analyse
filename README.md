@@ -26,6 +26,10 @@
 ## 矩阵索引，切片
 ## random模块
  * permutation
+## linalg模块
+ * norm
+
+
 # pandas
 # matplotlib
 # 爬虫
