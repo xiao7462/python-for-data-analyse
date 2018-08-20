@@ -26,6 +26,8 @@
 ## 矩阵索引，切片
 ## random模块
  * permutation
+ * seed
+ * uniform 
 ## linalg模块
  * norm
 
