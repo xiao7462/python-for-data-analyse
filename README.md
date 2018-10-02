@@ -12,6 +12,8 @@
 
 # 字典
 
+# 字符串正则化
+
 # 函数
  * [ 调用函数时加与不加括号的区别](https://github.com/xiao7462/python_learning_note/blob/master/function/self.ipynb)
  * [函数的默认参数]()
