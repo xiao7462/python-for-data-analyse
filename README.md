@@ -1,8 +1,5 @@
 # python_learning_note
-# python 入门
- **新手入门最好是在windows系统下载安装anaconda,再启动jupyter,节省了无关python学习的时间**  
-  * [利用anaconda安装jupyter](https://github.com/xiao7462/python_learning_note/blob/master/anaconda.md)
-  
+
 # 字符串
  * 字符串格式化
 
@@ -35,6 +32,7 @@
 
 
 # pandas
-# matplotlib
+# matplotlib & seaborn
+## scatter
 # 爬虫
 
