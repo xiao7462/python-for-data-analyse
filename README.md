@@ -33,6 +33,9 @@
 
 # pandas
 # matplotlib & seaborn
+## [axes.legend](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.legend.html?highlight=legend#matplotlib.axes.Axes.legend)
+
+
 ## scatter
 # 爬虫
 
