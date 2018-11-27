@@ -37,5 +37,7 @@
   * ax.legend(loc = 1)  改变legend位置 ，常用的loc = {'best'：	0}， {'upper right'：	1}， {'upper left'：	2} 
        
 ## scatter
+## sns.FacetGrid
+
 # 爬虫
 
