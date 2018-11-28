@@ -40,7 +40,7 @@
        
 ## scatter
 ## bar
- barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
+ * barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
 ## sns.FacetGrid
 
 # 爬虫
