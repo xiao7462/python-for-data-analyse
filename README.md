@@ -45,7 +45,16 @@
     当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
 
     但是都能用 df.iloc[1], 结果一致
-
+### pd.drop 丢掉行或者列 
+   * 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True) axis丢掉列，inplace 是否返回改变df
+   * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)
+   
+### [why sort_values() is diifferent form sort_values().values](https://stackoverflow.com/questions/53292709/why-sort-values-is-diifferent-form-sort-values-values)      
+    1.df = df.apply( lambda x: x.sort_values())   会考虑到索引再合并
+    2.df.apply(lambda x: x.sort_values().values) 先返回numpy的arrays，再将arrays合并为dataframe
+    
+### [find maximum value in col C in pandas dataframe while group by both col A and B](https://stackoverflow.com/questions/53385348/find-maximum-value-in-col-c-in-pandas-dataframe-while-group-by-both-col-a-and-b) 
+   * `df.groupby(['RT','Similarity','Name'],as_index=False)['Quality'].sum()` 
 
 
 
