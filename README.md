@@ -1,27 +1,35 @@
-# python_learning_note
+目录1. <a href="#1">python_learning_note</a>    
+   2. <a href="#2">numpy</a>     
+   3. <a href="#3">pandas</a>  
+   4. <a href="#4">matplotlib & seaborn</a>       
+   5. <a href="#5">爬虫</a>
 
-# 字符串
+
+
+# <a name="1">python_learning_note</a>
+
+## <a name="1">字符串</a>
  * 字符串格式化
 
-# 列表
+## 列表
 
-# 元组
+## 元组
 
-# 字典
+## 字典
 
-# 字符串正则化
+## 字符串正则化
 
-# 函数
+## 函数
  * [ 调用函数时加与不加括号的区别](https://github.com/xiao7462/python_learning_note/blob/master/function/self.ipynb)
  * [函数的默认参数]()
-# 面向对象
+## 面向对象
  * [面向对象简介](https://github.com/xiao7462/python_learning_note/blob/master/OOP/OOP.ipynb)
  * [python中的下划线和双下划线](https://segmentfault.com/a/1190000002611411)
  * [self](https://github.com/xiao7462/python_learning_note/blob/master/OOP/self.ipynb)
  * [\__init\__ ](https://github.com/xiao7462/python_learning_note/blob/master/OOP/__init__.ipynb)
  * [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
  
-# numpy
+# <a name="2">numpy</a>
 ## 矩阵索引，切片
 ## random模块
  * permutation
@@ -39,7 +47,10 @@
  * norm
 
 
-# pandas
+       
+       
+       
+# <a name="3">pandas</a>
 ### dataframe获取列名 
  * df.columns.values
  * list(df)
@@ -81,7 +92,7 @@
 
 
 
-# matplotlib & seaborn
+# <a name="4">matplotlib & seaborn</a>
 ## 基础 
 ### [subplot & subplots](https://stackoverflow.com/questions/52214776/python-matplotlib-differences-between-subplot-and-subplots) subplot返回axis ,而subplots返回fig,axis. subplots更加方便
  * [Why do many examples use “fig, ax = plt.subplots()” in Matplotlib/pyplot/python](https://stackoverflow.com/questions/34162443/why-do-many-examples-use-fig-ax-plt-subplots-in-matplotlib-pyplot-python)
@@ -103,5 +114,5 @@
  * 参数bins 代表用多少个长方形 ，bins= False表示直接用kernel 分布曲线
 
 
-# 爬虫
+# <a name="5">爬虫</a>
 
