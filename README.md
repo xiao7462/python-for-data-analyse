@@ -36,6 +36,15 @@
 
 ### [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
 
+### groupby
+ * [示例](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/groupby.ipynb)
+ * 参数as_index作用
+  [What is as_index in groupby in pandas?](https://stackoverflow.com/questions/41236370/what-is-as-index-in-groupby-in-pandas)      
+  1.当as_index = True时  ， df.loc[] 只能用label来  比如‘bk1'.     
+
+    当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
+
+    但是都能用 df.iloc[1], 结果一致
 
 
 
