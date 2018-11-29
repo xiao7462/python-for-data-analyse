@@ -40,6 +40,10 @@
 
 
 # pandas
+### dataframe获取列名 
+ * df.columns.values
+ * list(df)
+
 ### df.values 返回df的值， np.arrays
 
 ### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
