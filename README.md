@@ -95,6 +95,8 @@
  * barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
 ## sns.FacetGrid
 
+## [sns.distplot  ](https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=dist#seaborn.distplot)
+ * 参数bins 代表用多少个长方形 ，bins= False表示直接用kernel 分布曲线
 
 
 # 爬虫
