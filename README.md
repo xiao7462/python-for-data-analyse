@@ -32,6 +32,8 @@
 
 
 # pandas
+### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut)
+
 # matplotlib & seaborn
 ## matplotlib颜色 [转载](https://www.cnblogs.com/darkknightzh/p/6117528.html)
 
