@@ -32,7 +32,7 @@
 
 
 # pandas
-### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut)
+### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
 
 # matplotlib & seaborn
 ## matplotlib颜色 [转载](https://www.cnblogs.com/darkknightzh/p/6117528.html)
