@@ -27,6 +27,14 @@
  * permutation
  * seed
  * uniform 
+ * [randint](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/np.random.randint.ipynb)
+    基本用法 ： 
+    ```
+    np.random.randint(1,5,(3,3))   (最低值，最高值，元组（output shape））
+    array([[6, 1, 6],
+       [4, 5, 7],
+       [4, 4, 7]])
+    ```
 ## linalg模块
  * norm
 
