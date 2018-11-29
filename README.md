@@ -40,6 +40,8 @@
 
 
 # pandas
+### df.values 返回df的值， np.arrays
+
 ### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
 
 ### [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
