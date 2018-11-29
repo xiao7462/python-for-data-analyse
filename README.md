@@ -46,7 +46,7 @@
 ## [axes.legend](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.legend.html?highlight=legend#matplotlib.axes.Axes.legend)
   * ax.legend(loc = 1)  改变legend位置 ，常用的loc = {'best'：	0}， {'upper right'：	1}， {'upper left'：	2} 
 ## sns.countplot
- * [sample](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/countplot_sample.ipynb) 
+ * [多组feature同时显示countplot](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/countplot_sample.ipynb) 
 ## scatter
 ## bar
  * barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
