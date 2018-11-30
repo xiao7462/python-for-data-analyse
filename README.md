@@ -50,6 +50,9 @@
        
        
        
+
+
+
 # <a name="3">pandas</a>
 ### dataframe获取列名 
  * df.columns.values
@@ -83,6 +86,20 @@
 ### [How to replace one col values with another col values in conditions [duplicate]](https://stackoverflow.com/questions/53352585/how-to-replace-one-col-values-with-another-col-values-in-conditions)
    * 通过mask来删选条件  , mask会返回False的object`df['RT'] = df['RT'].mask(df['similarity'] > 0.99, df['patch'])`
    [Pandas mask / where methods versus NumPy np.where](https://stackoverflow.com/questions/51982417/pandas-mask-where-methods-versus-numpy-np-where)
+
+### [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb)
+   * 
+   ```
+   df.groupby('day')['total_bill'].mean()
+df.groupby('day').filter(lambda x : x['total_bill'].mean() > 20)
+df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
+   ```  
+[链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)
+   *  if we want to get a single value for each group -> use aggregate()
+      if we want to get a subset of the input rows -> use filter()
+      if we want to get a new value for each input row -> use transform()
+
+
 
 
 
