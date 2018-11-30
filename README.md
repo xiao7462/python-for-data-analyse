@@ -54,17 +54,17 @@
 
 
 # <a name="3">pandas</a>
-### dataframe获取列名 
+## dataframe获取列名 
  * df.columns.values
  * list(df)
 
-### df.values 返回df的值， np.arrays
+## df.values 返回df的值， np.arrays
 
-### [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
+## [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
 
-### [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
+## [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
 
-### pd.groupby
+## pd.groupby
  * [示例](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/groupby.ipynb)
  * 参数as_index作用
   [What is as_index in groupby in pandas?](https://stackoverflow.com/questions/41236370/what-is-as-index-in-groupby-in-pandas)      
@@ -73,21 +73,21 @@
     当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
 
     但是都能用 df.iloc[1], 结果一致
-### pd.drop 丢掉行或者列 
+## pd.drop 丢掉行或者列 
    * 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
    * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)
    
-### [why sort_values() is diifferent form sort_values().values](https://stackoverflow.com/questions/53292709/why-sort-values-is-diifferent-form-sort-values-values)      
+## [why sort_values() is diifferent form sort_values().values](https://stackoverflow.com/questions/53292709/why-sort-values-is-diifferent-form-sort-values-values)      
     1.df = df.apply( lambda x: x.sort_values())   会考虑到索引再合并
     2.df.apply(lambda x: x.sort_values().values) 先返回numpy的arrays，再将arrays合并为dataframe
     
-### [find maximum value in col C in pandas dataframe while group by both col A and B](https://stackoverflow.com/questions/53385348/find-maximum-value-in-col-c-in-pandas-dataframe-while-group-by-both-col-a-and-b) 
+## [find maximum value in col C in pandas dataframe while group by both col A and B](https://stackoverflow.com/questions/53385348/find-maximum-value-in-col-c-in-pandas-dataframe-while-group-by-both-col-a-and-b) 
    * `df.groupby(['RT','Similarity','Name'],as_index=False)['Quality'].sum()` 
-### [How to replace one col values with another col values in conditions [duplicate]](https://stackoverflow.com/questions/53352585/how-to-replace-one-col-values-with-another-col-values-in-conditions)
+## [How to replace one col values with another col values in conditions [duplicate]](https://stackoverflow.com/questions/53352585/how-to-replace-one-col-values-with-another-col-values-in-conditions)
    * 通过mask来删选条件  , mask会返回False的object`df['RT'] = df['RT'].mask(df['similarity'] > 0.99, df['patch'])`
    [Pandas mask / where methods versus NumPy np.where](https://stackoverflow.com/questions/51982417/pandas-mask-where-methods-versus-numpy-np-where)
 
-### [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb)
+## [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb)
    * 
    ```
    df.groupby('day')['total_bill'].mean()
