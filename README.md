@@ -73,6 +73,18 @@
     当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
 
     但是都能用 df.iloc[1], 结果一致
+ *   [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb) [链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)     
+
+   ```
+   df.groupby('day')['total_bill'].mean()
+df.groupby('day').filter(lambda x : x['total_bill'].mean() > 20)
+df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
+   ```          
+  >    if we want to get a single value for each group -> use aggregate()    
+      if we want to get a subset of the input rows -> use filter()    
+      if we want to get a new value for each input row -> use transform()    
+
+
 ## pd.drop 丢掉行或者列 
    * 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
    * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)      
@@ -88,15 +100,9 @@
    * 通过mask来删选条件  , mask会返回False的object`df['RT'] = df['RT'].mask(df['similarity'] > 0.99, df['patch'])`
    [Pandas mask / where methods versus NumPy np.where](https://stackoverflow.com/questions/51982417/pandas-mask-where-methods-versus-numpy-np-where)
 
-## [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb)
-   * 
-   ```
-   df.groupby('day')['total_bill'].mean()
-df.groupby('day').filter(lambda x : x['total_bill'].mean() > 20)
-df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
-   ```  
+## 
 [链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)
-   *  if we want to get a single value for each group -> use aggregate()
+      if we want to get a single value for each group -> use aggregate()
       if we want to get a subset of the input rows -> use filter()
       if we want to get a new value for each input row -> use transform()
 
