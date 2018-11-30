@@ -75,7 +75,8 @@
     但是都能用 df.iloc[1], 结果一致
 ## pd.drop 丢掉行或者列 
    * 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
-   * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)
+   * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)      
+      `df.drop(df.index[[0, 2]])` or `df.drop(df.index[[np.arange(0,2)]])`
    
 ## [why sort_values() is diifferent form sort_values().values](https://stackoverflow.com/questions/53292709/why-sort-values-is-diifferent-form-sort-values-values)      
     1.df = df.apply( lambda x: x.sort_values())   会考虑到索引再合并
