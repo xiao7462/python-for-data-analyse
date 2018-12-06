@@ -1,10 +1,15 @@
-目录1. <a href="#1">python_learning_note</a>    
-   2. <a href="#2">numpy</a>     
-   3. <a href="#3">pandas</a>  
-   4. <a href="#4">matplotlib & seaborn</a>       
-   5. <a href="#5">爬虫</a>
+目录    
+
+0. <a href="#0">环境搭建</a>    
+1. <a href="#1">python_learning_note</a>    
+2. <a href="#2">numpy</a>     
+3. <a href="#3">pandas</a>  
+4. <a href="#4">matplotlib & seaborn</a>       
+5. <a href="#5">爬虫</a>
 
 
+#  <a name="0">环境搭建</a>
+ * 服务器搭建jupyter-notebook 并远程链接
 
 # <a name="1">python_learning_note</a>
 
