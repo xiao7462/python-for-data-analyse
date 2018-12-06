@@ -9,7 +9,8 @@
 
 
 #  <a name="0">环境搭建</a>
- * 服务器搭建jupyter-notebook 并远程链接
+ * [windows搭建jupyter-notebook](https://github.com/xiao7462/python-for-data-analyse/blob/master/anaconda.md)
+ * [服务器搭建jupyter-notebook 并远程链接](https://github.com/xiao7462/python-for-data-analyse/blob/master/linux_anaconda.md)
 
 # <a name="1">python_learning_note</a>
 
