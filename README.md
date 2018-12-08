@@ -35,8 +35,23 @@
  * [\__init\__ ](https://github.com/xiao7462/python_learning_note/blob/master/OOP/__init__.ipynb)
  * [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
  
+
+
 # <a name="2">numpy</a>
+## 数据加载
+ * npz file 加载 `data = np.load(file.npz)`     # 有时直接的load 网页数据无法下载，可以通过其他方式下载到本地再加载
+   > 这是data是有一个npz class ,不能直接的去看里面的内容
+   ```
+   # 查看data里面的数据
+   >>> npx.files
+   >>> ['y','x']
+   >>> npz.f.x   or npz['x']
+   >>> array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])  #得到里面的array
+   ```
+
 ## 矩阵索引，切片
+
+
 ## random模块
  * permutation
  * seed
