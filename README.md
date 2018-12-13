@@ -8,14 +8,14 @@
 5. <a href="#5">爬虫</a>
 
 
-#  <a name="0">环境搭建</a>
+#  <a name="0">0. 环境搭建</a>
  * [windows搭建jupyter-notebook](https://github.com/xiao7462/python-for-data-analyse/blob/master/anaconda.md)
  * [服务器搭建jupyter-notebook 并远程链接](https://github.com/xiao7462/python-for-data-analyse/blob/master/linux_anaconda.md)
 
-# <a name="1">python_learning_note</a>
+# <a name="1">1. python_learning_note</a>
 
 ## <a name="1">字符串</a>
- * 字符串格式化
+ 1. 字符串格式化
 
 ## 列表
 
@@ -26,20 +26,20 @@
 ## 字符串正则化
 
 ## 函数
- * [ 调用函数时加与不加括号的区别](https://github.com/xiao7462/python_learning_note/blob/master/function/self.ipynb)
- * [函数的默认参数]()
+ 1. [ 调用函数时加与不加括号的区别](https://github.com/xiao7462/python_learning_note/blob/master/function/self.ipynb)
+ 2. [函数的默认参数]()
 ## 面向对象
- * [面向对象简介](https://github.com/xiao7462/python_learning_note/blob/master/OOP/OOP.ipynb)
- * [python中的下划线和双下划线](https://segmentfault.com/a/1190000002611411)
- * [self](https://github.com/xiao7462/python_learning_note/blob/master/OOP/self.ipynb)
- * [\__init\__ ](https://github.com/xiao7462/python_learning_note/blob/master/OOP/__init__.ipynb)
- * [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
+ 1. [面向对象简介](https://github.com/xiao7462/python_learning_note/blob/master/OOP/OOP.ipynb)
+ 2. [python中的下划线和双下划线](https://segmentfault.com/a/1190000002611411)
+ 3. [self](https://github.com/xiao7462/python_learning_note/blob/master/OOP/self.ipynb)
+ 4. [\__init\__ ](https://github.com/xiao7462/python_learning_note/blob/master/OOP/__init__.ipynb)
+ 5. [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
  
 
 
-# <a name="2">numpy</a>
+# <a name="2">2. numpy</a>
 ## 数据加载
- * npz file 加载 `data = np.load(file.npz)`     # 有时直接的load 网页数据无法下载，可以通过其他方式下载到本地再加载
+ 1. npz file 加载 `data = np.load(file.npz)`     # 有时直接的load 网页数据无法下载，可以通过其他方式下载到本地再加载
    > 这是data是有一个npz class ,不能直接的去看里面的内容
    ```
    # 查看data里面的数据
@@ -53,10 +53,10 @@
 
 
 ## random模块
- * permutation
- * seed
- * uniform 
- * [randint](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/np.random.randint.ipynb)
+ 1. permutation
+ 2. seed
+ 3. uniform 
+ 4. [randint](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/np.random.randint.ipynb)
     基本用法 ： 
     ```
     np.random.randint(1,5,(3,3))   (最低值，最高值，元组（output shape））
@@ -65,7 +65,7 @@
        [4, 4, 7]])
     ```
 ## linalg模块
- * norm
+ 1. norm
 
 
        
@@ -74,10 +74,10 @@
 
 
 
-# <a name="3">pandas</a>
+# <a name="3">3. pandas</a>
 ## dataframe获取列名 
- * df.columns.values
- * list(df)
+ 1. df.columns.values
+ 2. list(df)
 
 ## df.values 返回df的值， np.arrays
 
@@ -86,12 +86,12 @@
 ## [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
 
 ## pd.groupby
- * [示例](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/groupby.ipynb)
- * 参数as_index作用
-  [What is as_index in groupby in pandas?](https://stackoverflow.com/questions/41236370/what-is-as-index-in-groupby-in-pandas)      
-  1.当as_index = True时  ， df.loc[] 只能用label来  比如‘bk1'.     
+ 1. [示例](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/groupby.ipynb)
+  参数as_index作用
+  [What is as_index in groupby in pandas?](https://stackoverflow.com/questions/41236370/what-is-as-index-in-groupby-in-pandas)            
+    * 当as_index = True时  ， df.loc[] 只能用label来  比如'bk1'.      
 
-    当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
+    * 当as_index = False时 ，df.loc[] 只能用索引  0,1,2，      
 
     但是都能用 df.iloc[1], 结果一致
  *   [agg vs filter vs transform](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/agg-filter-transform.ipynb) [链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)     
@@ -107,8 +107,8 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
 
 
 ## pd.drop 丢掉行或者列 
-   * 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
-   * 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)      
+   1. 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
+   2. 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)      
       `df.drop(df.index[[0, 2]])` or `df.drop(df.index[[np.arange(0,2)]])`
    
 ## [why sort_values() is diifferent form sort_values().values](https://stackoverflow.com/questions/53292709/why-sort-values-is-diifferent-form-sort-values-values)      
@@ -116,9 +116,9 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
     2.df.apply(lambda x: x.sort_values().values) 先返回numpy的arrays，再将arrays合并为dataframe
     
 ## [find maximum value in col C in pandas dataframe while group by both col A and B](https://stackoverflow.com/questions/53385348/find-maximum-value-in-col-c-in-pandas-dataframe-while-group-by-both-col-a-and-b) 
-   * `df.groupby(['RT','Similarity','Name'],as_index=False)['Quality'].sum()` 
+   1. `df.groupby(['RT','Similarity','Name'],as_index=False)['Quality'].sum()` 
 ## [How to replace one col values with another col values in conditions [duplicate]](https://stackoverflow.com/questions/53352585/how-to-replace-one-col-values-with-another-col-values-in-conditions)
-   * 通过mask来删选条件  , mask会返回False的object`df['RT'] = df['RT'].mask(df['similarity'] > 0.99, df['patch'])`
+   2. 通过mask来删选条件  , mask会返回False的object`df['RT'] = df['RT'].mask(df['similarity'] > 0.99, df['patch'])`
    [Pandas mask / where methods versus NumPy np.where](https://stackoverflow.com/questions/51982417/pandas-mask-where-methods-versus-numpy-np-where)
 
 ## 
@@ -137,7 +137,7 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
 
 
 
-# <a name="4">matplotlib & seaborn</a>
+# <a name="4">4. matplotlib & seaborn</a>
 ## 基础 
 ### [subplot & subplots](https://stackoverflow.com/questions/52214776/python-matplotlib-differences-between-subplot-and-subplots) subplot返回axis ,而subplots返回fig,axis. subplots更加方便
  * [Why do many examples use “fig, ax = plt.subplots()” in Matplotlib/pyplot/python](https://stackoverflow.com/questions/34162443/why-do-many-examples-use-fig-ax-plt-subplots-in-matplotlib-pyplot-python)
@@ -147,17 +147,17 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
 ## matplotlib颜色 [转载](https://www.cnblogs.com/darkknightzh/p/6117528.html)
 
 ## [axes.legend](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.legend.html?highlight=legend#matplotlib.axes.Axes.legend)
-  * ax.legend(loc = 1)  改变legend位置 ，常用的loc = {'best'：	0}， {'upper right'：	1}， {'upper left'：	2} 
+  1. ax.legend(loc = 1)  改变legend位置 ，常用的loc = {'best'：	0}， {'upper right'：	1}， {'upper left'：	2} 
 ## sns.countplot
- * [多组feature同时显示countplot](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/countplot_sample.ipynb) 
+ 1. [多组feature同时显示countplot](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/countplot_sample.ipynb) 
 ## scatter
 ## bar
- * barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
+ 1. barplot官方[example](https://github.com/xiao7462/python-for-data-analyse/blob/master/matplotlib-seaborn/System%20Monotor.ipynb)
 ## sns.FacetGrid
 
 ## [sns.distplot  ](https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=dist#seaborn.distplot)
- * 参数bins 代表用多少个长方形 ，bins= False表示直接用kernel 分布曲线
+ 1. 参数bins 代表用多少个长方形 ，bins= False表示直接用kernel 分布曲线
 
 
-# <a name="5">爬虫</a>
+# <a name="5">5. 爬虫</a>
 
