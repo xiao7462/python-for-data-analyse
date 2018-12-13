@@ -12,6 +12,12 @@
  * [windows搭建jupyter-notebook](https://github.com/xiao7462/python-for-data-analyse/blob/master/anaconda.md)
  * [服务器搭建jupyter-notebook 并远程链接](https://github.com/xiao7462/python-for-data-analyse/blob/master/linux_anaconda.md)
 
+
+
+<br>
+<br>
+<br>
+
 # <a name="1">1. python_learning_note</a>
 
 ## <a name="1">字符串</a>
@@ -36,6 +42,9 @@
  5. [public and private](https://github.com/xiao7462/python_learning_note/blob/master/OOP/public%20and%20private.ipynb)
  
 
+<br>
+<br>
+<br>
 
 # <a name="2">2. numpy</a>
 ## 数据加载
@@ -73,6 +82,9 @@
        
 
 
+<br>
+<br>
+<br>
 
 # <a name="3">3. pandas</a>
 ## dataframe获取列名 
@@ -122,10 +134,10 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
    [Pandas mask / where methods versus NumPy np.where](https://stackoverflow.com/questions/51982417/pandas-mask-where-methods-versus-numpy-np-where)
 
 ## 
-[链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)
-      if we want to get a single value for each group -> use aggregate()
-      if we want to get a subset of the input rows -> use filter()
-      if we want to get a new value for each input row -> use transform()
+[链接](https://pythonforbiologists.com/when-to-use-aggregatefiltertransform-in-pandas/)    
+      if we want to get a single value for each group -> use aggregate()    
+      if we want to get a subset of the input rows -> use filter()    
+      if we want to get a new value for each input row -> use transform()    
 
 
 
@@ -136,6 +148,9 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
 
 
 
+<br>
+<br>
+<br>
 
 # <a name="4">4. matplotlib & seaborn</a>
 ## 基础 
@@ -158,6 +173,11 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
 ## [sns.distplot  ](https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=dist#seaborn.distplot)
  1. 参数bins 代表用多少个长方形 ，bins= False表示直接用kernel 分布曲线
 
+
+
+<br>
+<br>
+<br>
 
 # <a name="5">5. 爬虫</a>
 
