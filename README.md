@@ -34,6 +34,22 @@
 ## 函数
  1. [ 调用函数时加与不加括号的区别](https://github.com/xiao7462/python_learning_note/blob/master/function/self.ipynb)
  2. [函数的默认参数]()
+ 3. enumberate() -- 作用于一个可遍历的对象，同时返回key 和values
+  ```
+  >>> list(enumerate(seasons, start=1))       # 下标从 1 开始
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+  
+  >>>seq = ['one', 'two', 'three']
+>>> for i, element in enumerate(seq):
+...     print i, element
+... 
+0 one
+1 two
+2 three
+  
+  ```
+  
+
 ## 面向对象
  1. [面向对象简介](https://github.com/xiao7462/python_learning_note/blob/master/OOP/OOP.ipynb)
  2. [python中的下划线和双下划线](https://segmentfault.com/a/1190000002611411)
