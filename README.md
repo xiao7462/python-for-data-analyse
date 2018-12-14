@@ -63,6 +63,8 @@
 <br>
 
 # <a name="2">2. numpy</a>
+* 显示全部array   输入`np.set_printoptions(threshold=np.inf)`
+
 ## 数据加载
  1. npz file 加载 `data = np.load(file.npz)`     # 有时直接的load 网页数据无法下载，可以通过其他方式下载到本地再加载
    > 这是data是有一个npz class ,不能直接的去看里面的内容
