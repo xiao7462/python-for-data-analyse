@@ -157,7 +157,17 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
       if we want to get a subset of the input rows -> use filter()    
       if we want to get a new value for each input row -> use transform()    
 
-
+## np.c_ : 将array转换为列向量， 并将所有的列向量合并
+```
+Examples
+--------
+>>> np.c_[np.array([1,2,3]), np.array([4,5,6])]
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+>>> np.c_[np.array([[1,2,3]]), 0, 0, np.array([[4,5,6]])]
+array([[1, 2, 3, 0, 0, 4, 5, 6]])
+```
 
 
 
