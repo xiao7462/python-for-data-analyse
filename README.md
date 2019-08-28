@@ -76,6 +76,8 @@
 * 矩阵索引，切片
 
 
+
+
 * random模块
  1. permutation
  2. seed
@@ -106,10 +108,13 @@
 * dataframe获取列名 
  1. df.columns.values
  2. list(df)
+ 
 
 * df.values 返回df的值， np.arrays
 
+
 * [pd.cut & pd.quct](https://stackoverflow.com/questions/30211923/what-is-the-difference-between-pandas-qcut-and-pandas-cut) cut是根据values来平均划分，而qcut是根据分位数来划分，4分位数，中位数等
+
 
 * [查看null值](https://github.com/xiao7462/python-for-data-analyse/blob/master/numpy-pandas/ob_null.ipynb)
 
@@ -134,6 +139,8 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
       if we want to get a new value for each input row -> use transform()    
 
 
+
+
 * pd.drop 丢掉行或者列 
    1. 丢掉列      `df.drop(['lable']，axis = 1,inpalce = True)` axis丢掉列，inplace 是否返回改变df
    2. 丢掉行 [why can't pd.drop() by index number row](https://stackoverflow.com/questions/53297189/why-cant-pd-drop-by-index-number-row)      
@@ -153,6 +160,9 @@ df.groupby('day')['total_bill'].transform(lambda x : x/x.mean())
       if we want to get a single value for each group -> use aggregate()    
       if we want to get a subset of the input rows -> use filter()    
       if we want to get a new value for each input row -> use transform()    
+
+
+
 
 * np.c_ : 将array转换为列向量， 并将所有的列向量合并
 ```
